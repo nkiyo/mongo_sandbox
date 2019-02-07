@@ -1,10 +1,10 @@
 #!/bin/bash
 
-mkdir ./db1
-mkdir ./log1
+mkdir -p ./db1
+mkdir -p ./log1
 
-#rsset="--replSet 'rs0'"
-rsset=""
+rsset="--replSet=rs0"
+#rsset=""
 
 mongod --port 27018 \
        --dbpath ./db1 \
