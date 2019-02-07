@@ -1,8 +1,14 @@
 #!/bin/bash
 
+mkdir ./db
+mkdir ./log
+
+#rsset="--replSet 'rs0'"
+rsset=""
+
 mongod --port 27017 \
        --dbpath ./db \
        --logpath log/mongod.log \
-       --replSet 'rs0'
-       --bind_ip localhost
+       --bind_ip localhost \
+       ${rsset}
 
