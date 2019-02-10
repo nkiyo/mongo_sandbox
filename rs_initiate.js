@@ -1,3 +1,4 @@
+// primaryのmongoDBだけで実行すること
 rs.initiate(
    {
       _id: "rs0",
